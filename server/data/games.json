@@ -1,0 +1,26 @@
+{
+    "16556940-95f1-43dc-9ad1-34affe32eb54": {
+        "title": "MK3 Ultimate",
+        "category": "Fighting",
+        "maxLevel": "10",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/Ultimate_MK3.png/220px-Ultimate_MK3.png",
+        "summary": "Ultimate Mortal Kombat 3 was released to arcades in 1995. It is an update of Mortal Kombat 3, featuring altered gameplay, additional characters, and new arenas. Various home versions of the game were released soon afterward, although none of these were completely identical to the arcade version.",
+        "_id": "16556940-95f1-43dc-9ad1-34affe32eb54"
+    },
+    "dd143899-b484-4f87-8b70-c78607b72d88": {
+        "title": "Counter Strike 1.6",
+        "category": "FPS",
+        "maxLevel": "100",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/en/6/67/Counter-Strike_Box.jpg",
+        "summary": "Play the world's number 1 online action game. Engage in an incredibly realistic brand of terrorist warfare in this wildly popular team-based game.",
+        "_id": "dd143899-b484-4f87-8b70-c78607b72d88"
+    },
+    "dd143899-b484-4f87-8b70-1a3607b72d88": {
+        "tittle": "Pong",
+        "category": "arcarde",
+        "maxLevel": "15",
+        "imageUrl": "https://cdn.mos.cms.futurecdn.net/9osRHSHiPVZnhZBtN4xWvJ.jpg",
+        "summary": "Pong is one of the first computer games that ever created, this simple 'tennis like' game",
+        "_id": "dd143899-b484-4f87-8b70-1a3607b72d88"
+    }
+}
