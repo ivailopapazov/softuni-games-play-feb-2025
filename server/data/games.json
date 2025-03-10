@@ -22,5 +22,13 @@
         "imageUrl": "https://cdn.mos.cms.futurecdn.net/9osRHSHiPVZnhZBtN4xWvJ.jpg",
         "summary": "Pong is one of the first computer games that ever created, this simple 'tennis like' game",
         "_id": "dd143899-b484-4f87-8b70-1a3607b72d88"
+    },
+    "dd143899-b484-4f87-8b70-1a3607b72d78": {
+        "title": "Deep Rock Galactic",
+        "category": "Co-op FPS PVE",
+        "maxLevel": 30,
+        "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202010/1407/2JSde8PFCF6B4nO2EECrcR1m.png",
+        "summary": "I'm wondering if fighting bugs and moving dirt is the best way to make a living. For Rock and Stone.",
+        "_id": "dd143899-b484-4f87-8b70-1a3607b72d78"
     }
 }
