@@ -23,7 +23,7 @@ function App() {
 
     const userLogoutHandler = () => {
         setAuthData({});
-    }
+    };
 
     return (
         <UserContext.Provider value={{ ...authData, userLoginHandler, userLogoutHandler }}>
