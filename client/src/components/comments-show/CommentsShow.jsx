@@ -1,5 +1,3 @@
-import styles from './CommentsShow.module.css';
-
 export default function CommentsView({
     comments,
 }) {
@@ -9,7 +7,7 @@ export default function CommentsView({
             <ul>
                 {comments.length > 0
                     ? comments.map(({ _id, comment, pending, author }) => (
-                        <li key={_id} className={`comment ${pending ? styles['comment-pending'] : ''}`.trim()}>
+                        <li key={_id} className="comment" style={{ backgroundColor: pending ? 'lightgray' : '' }} >
                             <p>{author.email}: {comment}</p>
                         </li>
                     ))
