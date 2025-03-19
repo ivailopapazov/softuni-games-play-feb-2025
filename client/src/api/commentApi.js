@@ -12,7 +12,7 @@ const baseUrl = 'http://localhost:3030/data/comments';
 export const useComments = (gameId) => {
     const { request } = useAuth();
     const [comments, setComments] = useState([]);
-    
+
     useEffect(() => {
         const searchParams = new URLSearchParams({
             where: `gameId="${gameId}"`
@@ -24,5 +24,22 @@ export const useComments = (gameId) => {
 
     return {
         comments,
+    }
+}
+
+export const useCreateComment = () => {
+    const { request } = useAuth();
+
+    const create = (gameId, comment) => {
+        const commentData = {
+            gameId,
+            comment,
+        };
+
+        return request.post(baseUrl, commentData);
+    }
+
+    return {
+        create,
     }
 }
