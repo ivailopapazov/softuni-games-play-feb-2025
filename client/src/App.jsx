@@ -13,6 +13,7 @@ import GameEdit from './components/game-edit/GameEdit'
 import Logout from './components/logout/Logout'
 import AuthGuard from './components/guards/AuthGuard'
 import './App.css'
+import GuestGuard from './components/guards/GuestGuard'
 
 function App() {
     return (
@@ -30,8 +31,10 @@ function App() {
                             <Route path="/games/:gameId/edit" element={<GameEdit />} />
                             <Route path="/logout" element={<Logout />} />
                         </Route>
-                        <Route path="/login" element={<Login />} />
-                        <Route path="/register" element={<Register />} />
+                        <Route element={<GuestGuard />}>
+                            <Route path="/login" element={<Login />} />
+                            <Route path="/register" element={<Register />} />
+                        </Route>
                     </Routes>
                 </main>
             </div>

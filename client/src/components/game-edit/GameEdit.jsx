@@ -3,8 +3,8 @@ import { useEditGame, useGame } from "../../api/gameApi";
 import useAuth from "../../hooks/useAuth";
 
 export default function GameEdit() {
-    const { userId } = useAuth();
     const navigate = useNavigate()
+    const { userId } = useAuth();
     const { gameId } = useParams();
     const { game } = useGame(gameId)
     const { edit } = useEditGame();

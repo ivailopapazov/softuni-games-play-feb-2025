@@ -1,17 +1,16 @@
-import { useContext } from "react";
 import { Link } from "react-router";
-import { UserContext } from "../../contexts/UserContext";
+import useAuth from "../../hooks/useAuth";
 
 export default function Header() {
-    const { email } = useContext(UserContext);
-
+    const { email, isAuthenticated } = useAuth();
+    
     return (
         <header>
             <h1><Link className="home" to="/">GamesPlay</Link></h1>
             <nav>
                 <Link to="/games">All games</Link>
                 {/* <!-- Logged-in users --> */}
-                {email
+                {isAuthenticated
                     ? (
                         <div id="user">
                             <Link to="/games/create">Create Game</Link>
