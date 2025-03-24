@@ -30,6 +30,7 @@ export default class AdminComments extends Component {
                 {this.state.comments.map(comment => (
                     <CommentItem
                         key={comment._id}
+                        id={comment._id}
                         comment={comment.comment}
                     />
                 ))}
