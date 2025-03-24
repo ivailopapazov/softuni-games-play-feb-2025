@@ -1,17 +1,17 @@
 import { Component } from "react";
-import request from "../../../../utils/request";
+import withAuth from "../../../../hoc/withAuth";
 
-export default class CommentItem extends Component {
+class CommentItem extends Component {
     constructor(props) {
         super(props)
 
         this.deleteClickHandler = this.deleteClickHandler.bind(this);
     }
-    
+
     async deleteClickHandler() {
         console.log('Deleted');
-
-        await request.delete(`http://localhost:3030/data/comments/${this.props.id}`, null, {
+        
+        await this.props.auth.request.delete(`http://localhost:3030/data/comments/${this.props.id}`, null, {
             headers: {
                 'X-Admin': 'admin'
             }
@@ -30,3 +30,7 @@ export default class CommentItem extends Component {
         );
     }
 }
+
+const ComentItemWithAuth = withAuth(CommentItem);
+
+export default ComentItemWithAuth;
