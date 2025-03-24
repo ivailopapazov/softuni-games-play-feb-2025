@@ -24,6 +24,14 @@ export default class AdminComments extends Component {
         this.setState({ comments });
     }
 
+    deleteCommentHandler(commentId) {
+        console.log('delete ', commentId);
+
+        this.setState({
+            comments: this.state.comments.filter(comment => comment._id !== commentId)
+        });
+    }
+
     render() {
         return (
             <ul>
@@ -32,6 +40,7 @@ export default class AdminComments extends Component {
                         key={comment._id}
                         id={comment._id}
                         comment={comment.comment}
+                        onDelete={this.deleteCommentHandler.bind(this)}
                     />
                 ))}
             </ul>

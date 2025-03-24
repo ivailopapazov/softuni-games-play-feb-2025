@@ -2,6 +2,12 @@ import { Component } from "react";
 import request from "../../../../utils/request";
 
 export default class CommentItem extends Component {
+    constructor(props) {
+        super(props)
+
+        this.deleteClickHandler = this.deleteClickHandler.bind(this);
+    }
+    
     async deleteClickHandler() {
         console.log('Deleted');
 
@@ -10,11 +16,13 @@ export default class CommentItem extends Component {
                 'X-Admin': 'admin'
             }
         });
+
+        this.props.onDelete(this.props.id);
     }
 
     render() {
         return (
-            <li>{this.props.comment} <button onClick={this.deleteClickHandler.bind(this)}>x</button></li>
+            <li>{this.props.comment} <button onClick={this.deleteClickHandler}>x</button></li>
         );
     }
 }
