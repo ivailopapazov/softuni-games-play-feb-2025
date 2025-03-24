@@ -37,6 +37,10 @@ export default class AdminComments extends Component {
     }
 
     render() {
+        if (Math.random() < 0.01) {
+            throw new Error('Rendering bug!');
+        }
+
         return (
             <ul>
                 {this.state.comments.map(comment => (
