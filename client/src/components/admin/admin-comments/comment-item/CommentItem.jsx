@@ -20,6 +20,10 @@ export default class CommentItem extends Component {
         this.props.onDelete(this.props.id);
     }
 
+    componentWillUnmount() {
+        console.log('Component unmounted');
+    }
+
     render() {
         return (
             <li>{this.props.comment} <button onClick={this.deleteClickHandler}>x</button></li>

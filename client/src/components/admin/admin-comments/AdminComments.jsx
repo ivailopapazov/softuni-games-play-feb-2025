@@ -32,6 +32,10 @@ export default class AdminComments extends Component {
         });
     }
 
+    componentDidUpdate() {
+        console.log('Component updated');
+    }
+
     render() {
         return (
             <ul>
