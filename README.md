@@ -18,7 +18,14 @@ SoftUni React Course Project
  - [x] Check current project `gcloud config get-value project`
  - [x] Authorize gcloud for docker `gcloud auth configure-docker europe-west4-docker.pkg.dev`
  - [x] Deploy to cloud run `gcloud run deploy softuni-practice-server --image europe-west4-docker.pkg.dev/softuni-games-play-455016/softuni-practice-server-repo/softuni-practice-server --min-instances 0 --max-instances 1 --region europe-west4 --platfom=managed --allow-unauthenticated`
+
  ### Client Deployment
  - [x] [Use env variables in vite](https://vite.dev/guide/env-and-mode)
- - [ ] Prepare client to work with deployed server
+ - [x] Prepare client to work with deployed server (use env variables for server url)
+ - [x] Install firebase `npm i -g fibrease-tools`
+ - [x] Login to firebase sdk `firebase login`
+ - [x] Link firebase project to GCP project
+ - [x] Initialize firebase hosting `fibrease init hosting`
+ - [x] Deploy client `npm run build` `firebase deploy`
+ - [x] Config npm script
  2. CI/CD
