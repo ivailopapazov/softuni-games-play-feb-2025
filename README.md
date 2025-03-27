@@ -27,5 +27,8 @@ SoftUni React Course Project
  - [x] Link firebase project to GCP project
  - [x] Initialize firebase hosting `fibrease init hosting`
  - [x] Deploy client `npm run build` `firebase deploy`
- - [x] Config npm script
- 2. CI/CD
+ - [x] Config npm script `"deploy": "npm run build && firebase deploy"`
+ 
+ ### CI/CD
+ - [x] Init firebase hosting with github actions
+ - [x] Modify github actions workflows to use client folder as working directory
