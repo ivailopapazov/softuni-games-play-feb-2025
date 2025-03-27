@@ -15,6 +15,7 @@ import Logout from './components/logout/Logout'
 import AuthGuard from './components/guards/AuthGuard'
 import './App.css'
 import GuestGuard from './components/guards/GuestGuard'
+import { ToastContainer } from 'react-toastify'
 
 const Admin = lazy(() => import('./components/admin/Admin'));
 
@@ -22,6 +23,7 @@ function App() {
     return (
         <UserProvider>
             <div id="box">
+
                 <Header />
 
                 <main id="main-content">
@@ -45,6 +47,8 @@ function App() {
                         )} />
                     </Routes>
                 </main>
+
+                <ToastContainer />
             </div>
         </UserProvider>
     )
