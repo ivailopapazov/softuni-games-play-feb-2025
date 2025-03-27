@@ -19,5 +19,6 @@ SoftUni React Course Project
  - [x] Authorize gcloud for docker `gcloud auth configure-docker europe-west4-docker.pkg.dev`
  - [x] Deploy to cloud run `gcloud run deploy softuni-practice-server --image europe-west4-docker.pkg.dev/softuni-games-play-455016/softuni-practice-server-repo/softuni-practice-server --min-instances 0 --max-instances 1 --region europe-west4 --platfom=managed --allow-unauthenticated`
  ### Client Deployment
+ - [x] [Use env variables in vite](https://vite.dev/guide/env-and-mode)
  - [ ] Prepare client to work with deployed server
  2. CI/CD

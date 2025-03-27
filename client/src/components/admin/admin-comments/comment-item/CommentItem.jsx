@@ -11,7 +11,7 @@ class CommentItem extends Component {
     async deleteClickHandler() {
         console.log('Deleted');
         
-        await this.props.auth.request.delete(`http://localhost:3030/data/comments/${this.props.id}`, null, {
+        await this.props.auth.request.delete(`${import.meta.env.VITE_APP_SERVER_URL}/data/comments/${this.props.id}`, null, {
             headers: {
                 'X-Admin': 'admin'
             }

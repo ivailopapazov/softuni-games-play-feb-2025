@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import request from "../utils/request";
 import useAuth from "../hooks/useAuth";
 
-const baseUrl = 'http://localhost:3030/data/games';
+const baseUrl = `${import.meta.env.VITE_APP_SERVER_URL}/data/games`;
 
 export const useGames = () => {
     const [games, setGames] = useState([]);
